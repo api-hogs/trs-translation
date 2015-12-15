@@ -8,7 +8,7 @@ Ember component for API_HOGS Trs project.
 
 ##Usage
 
-Please see example(https://github.com/api-hogs/trs-translation/blob/master/tests/dummy/app/components/trs-translation.js) in dummy app. 
+Please see [example](https://github.com/api-hogs/trs-translation/blob/master/tests/dummy/app/components/trs-translation.js) in dummy app. 
 
 ## Contiributing
 
