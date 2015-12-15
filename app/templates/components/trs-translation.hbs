@@ -1,0 +1,15 @@
+{{#if canEdit}} 
+  <button {{action 'toggleEdit' bubbles=false}}>e</button>
+{{/if}}
+{{#if isEditable}}
+  <span {{action 'notingAction' bubbles=false on='click'}}>
+    {{input value=trans}}
+    <button {{action 'cancelEdit' bubbles=false}}>Cancel</button>
+  </span>
+{{else}}
+  {{#if hasBlock}}
+    {{yield this}}
+  {{else}}
+    {{value}}
+  {{/if}}
+{{/if}}

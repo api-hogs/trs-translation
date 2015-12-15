@@ -19,6 +19,8 @@ module.exports = function(environment) {
     }
   };
 
+  ENV.endpoint = "http://api.translations.api-hogs.io/api/v1/languages";
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
