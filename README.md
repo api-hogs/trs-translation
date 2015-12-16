@@ -8,7 +8,23 @@ Ember component for API_HOGS Trs project.
 
 ##Usage
 
-Please see [example](https://github.com/api-hogs/trs-translation/blob/master/tests/dummy/app/components/trs-translation.js) in dummy app. 
+### Create component `editable-t.js`
+```
+  import ember from 'ember';
+  import tsrtranslation from 'trs-translation/components/trs-translation';
+  export default tsrtranslation.extend({
+    layoutname: "components/trs-translation",
+    session: ember.inject.service(),
+    i18n: ember.inject.service(),
+    locale: ember.computed.alias('i18n.locale'),
+    project: 2,
+    isauthenticated: ember.computed.alias('session.isauthenticated'),
+    canedit: ember.computed.equal('session.currentuser.isadmin', true),
+    token: ember.computed('session.session.content.authenticated.translation_token', function() {
+      return this.get('session.session.content.authenticated.translation_token');
+    })
+  });
+```
 
 ## Contiributing
 
