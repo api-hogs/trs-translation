@@ -25,7 +25,7 @@ Ember component for API_HOGS Trs project.
     })
   });
 ```
-
+### Use in your templates: `{{editable-t key="account.accountInfo"}}`
 ## Contiributing
 
 * `git clone` this repository
