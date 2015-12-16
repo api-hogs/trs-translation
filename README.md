@@ -13,13 +13,13 @@ Ember component for API_HOGS Trs project.
   import Ember from 'ember';
   import trsTranslation from 'trs-translation/components/trs-translation';
   export default trsTranslation.extend({
-    layoutname: "components/trs-translation",
+    layoutName: "components/trs-translation",
     session: Ember.inject.service(),
     i18n: Ember.inject.service(),
     locale: Ember.computed.alias('i18n.locale'),
     project: 0, //project id which you created in system
     isAuthenticated: Ember.computed.alias('session.isAuthenticated'),
-    canedit: Ember.computed.equal('session.currentuser.isAdmin', true),
+    canEdit: Ember.computed.equal('session.currentuser.isAdmin', true),
     token: Ember.computed('session.session.content.authenticated.translation_token', function() {
       return this.get('session.session.content.authenticated.translation_token');
     })
