@@ -8,6 +8,12 @@ Ember component for API_HOGS Trs project.
 
 ##Usage
 
+### Create
+ * account: http://translations.api-hogs.io/login
+ * project: http://take.ms/iZ5wu
+ * languages: http://take.ms/hYqGH
+ * get token: http://take.ms/DQD1z
+
 ### Create component `editable-t.js`
 ```javascript
   import Ember from 'ember';
